@@ -1,0 +1,153 @@
+.container {
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.bar {
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  position:absolute;
+  top:0;
+  left:0;
+  height:4px;
+  background:#218AFE;
+}
+
+.view {
+  width: 300px;
+  height: auto;
+  user-select: none;
+}
+
+.texts {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.myText {
+  align-self: flex-end;
+  padding: 5px 10px;
+  display:table;
+  border-radius:5px;
+  margin-bottom:0.2em;
+  background: #218AFE;
+  color:white;
+}
+
+.text {
+  background: rgba(0,0,0,0.1);
+  padding: 5px 10px;
+  display:table;
+  border-radius:5px;
+  margin-bottom:0.2em;
+}
+
+.textLink {
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.1);
+  display:table;
+  border-radius:5px;
+  cursor: pointer;
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-bottom:0.2em;
+}
+
+.textLink:hover {
+  opacity:0.7;
+}
+
+.emptySpace {
+  height:2em;
+}
+
+.subtext {
+  cursor:pointer;
+  color:rgba(0,0,0,0.4);
+  font-size:0.8em;
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-left:5px;
+}
+
+.subtext:hover {
+  opacity: 0.7;
+}
+
+.input {
+  margin-top: 3em;
+  display:flex;
+}
+
+.textInput {
+  padding: 7px 10px;
+  outline:none;
+  border:1px solid rgba(0,0,0,0.15);
+  border-radius:5px;
+  margin-right:1em;
+  flex-grow:1;
+  font-size:1em;
+}
+
+.send {
+  padding:0;
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  text-transform: lowercase;
+  color:#218AFE;
+  font-size:1em;
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.send:hover,
+.link:hover {
+  color:#1d70c9;
+}
+
+.linkRow {
+  display:flex;
+  justify-content: flex-end;
+  padding-top:1em;
+}
+
+.link {
+  color:#218AFE;
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size:1em;
+}
+
+.convos {
+  display:flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.convo {
+  border:1px solid rgba(0,0,0,0.07);
+  border-radius:5px;
+  display:flex;
+  justify-content:space-between;
+  box-sizing: border-box;
+  padding: 1em 1em;
+  align-items: center;
+  transition:0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.convo:hover {
+  opacity:0.7;
+}
+
+.settings {
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.setting {
+  display:flex;
+  justify-content: space-between;
+  cursor:pointer;
+}
